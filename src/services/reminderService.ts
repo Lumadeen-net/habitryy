@@ -74,7 +74,7 @@ class ReminderService {
   // Helper for testing
   sendTestNotification() {
     if (Notification.permission === "granted") {
-      new Notification("Habit.AI Test", {
+      new Notification("HABITRY Test", {
         body: "Your notifications are set up correctly! 🎯",
         icon: "/vite.svg"
       });
@@ -85,7 +85,7 @@ class ReminderService {
 
   private triggerNotification(habitName: string) {
     if (Notification.permission === "granted") {
-      new Notification("Habit.AI Reminder", {
+      new Notification("HABITRY Reminder", {
         body: `Time to focus on your habit: "${habitName}"! 🚀`,
         icon: "/vite.svg" // Fallback to vite logo if no custom icon
       });
